@@ -1,0 +1,65 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginRight="@dimen/dimen_5"
+    android:layout_marginLeft="@dimen/dimen_5"
+    android:layout_marginTop="@dimen/dimen_5"
+    android:layout_marginBottom="@dimen/dimen_5"
+    android:weightSum="4"
+    android:descendantFocusability="blocksDescendants"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/tv_PDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11/12/2018"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_20"
+        android:layout_weight="1.5"
+        android:gravity="start"
+        />
+
+
+    <TextView
+            android:id="@+id/tv_PBillNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill No"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20"
+            android:layout_weight=".1"
+            android:layout_marginRight="@dimen/dimen_10"
+           />
+
+        <TextView
+            android:id="@+id/tv_PSName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_PTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20"
+
+            android:layout_weight="1"
+          />
+
+
+
+
+
+    </LinearLayout>
+
+

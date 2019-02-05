@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <GridView
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/grid"
+        android:layout_above="@+id/textView7">
+
+    </GridView>
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FE2E64"
+        android:gravity="right"
+        android:text="status"
+        android:textColor="@color/white"/>
+
+
+    <Button
+        android:drawableRight="@drawable/ic_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add bill"
+        android:textSize="30dp"
+        android:textColor="#3E2723"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button2"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:background="@drawable/button_border"
+         />
+    <TextView
+        android:textColor="#3E2723"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/options_rel"
+        android:textSize="25dp"
+        android:text="Add contents"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7" />
+
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:id="@+id/options_rel"
+        android:background="#424242"
+
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_above="@+id/button2">
+        <HorizontalScrollView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/relativeLayout4"
+                    >
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_add_to_shopping_cart"
+                        android:clickable="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/item" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/item"
+                        android:text="item"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/relativeLayout4"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/relativeLayout6">
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_stock_white"
+                        android:clickable="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/stock" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/stock"
+                        android:text="purchase"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/relativeLayout6"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:src="@drawable/ic_user_silhouette"
+                        android:clickable="true"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/customer" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/customer"
+                        android:text="customer"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/relativeLayout6"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:src="@drawable/ic_user_silhouette"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/supplier"
+                        tools:ignore="VectorDrawableCompat" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/supplier"
+                        android:text="supplier"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/relativeLayout6"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:src="@drawable/ic_user_silhouette"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/brand" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/brand"
+                        android:text="Brand"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/relativeLayout6"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:src="@drawable/ic_kilograms"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/unit" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/unit"
+                        android:text="Unit"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/relativeLayout6"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:src="@drawable/ic_package"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/package_unit" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/package_unit"
+                        android:text="Package"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+

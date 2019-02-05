@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:layout_marginRight="@dimen/dimen_5"
+    android:layout_marginLeft="@dimen/dimen_5">
+
+
+
+
+        <TextView
+            android:id="@+id/tv_BillDate"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_SBillNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill No"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20"
+            android:layout_weight="1"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/tv_SCName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_STotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20"
+            android:layout_weight="1"
+            android:gravity="end"/>
+
+
+
+
+
+
+
+</LinearLayout>

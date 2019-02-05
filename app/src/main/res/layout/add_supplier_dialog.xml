@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <AutoCompleteTextView
+            android:capitalize="characters"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:completionThreshold="1"
+            android:drawableLeft="@drawable/ic_listandroid"
+            android:hint=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/supplier_name" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/supplier_vat"
+            android:inputType="text"
+            android:maxLength="20"
+            android:hint=""/>
+   </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/oldBalance"
+            android:hint=""
+            android:drawableLeft="@drawable/ic_book"
+            android:inputType="number"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/supplier_address"
+            android:hint=""
+            android:drawableLeft="@drawable/ic_book"
+            android:inputType="textCapSentences|textMultiLine"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/supplier_contact"
+            android:hint=""
+            android:drawableLeft="@drawable/ic_phone_call"
+            android:inputType="number"
+            android:maxLength="16"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/supplier_remarks"
+            android:hint=""
+            android:drawableLeft="@drawable/ic_remark"
+            android:inputType="textCapSentences|textMultiLine"
+              />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="end">
+
+
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="#ef5350"
+            android:layout_marginRight="30dp"
+            />
+
+        <Button
+            android:id="@+id/btOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="#66BB6A"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/dimen_20"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

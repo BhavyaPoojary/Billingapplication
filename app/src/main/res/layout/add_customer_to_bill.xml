@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView
+                android:capitalize="characters"
+                android:singleLine="true"
+                android:completionThreshold="1"
+                android:drawableLeft="@drawable/ic_shop"
+                android:hint=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shop_name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/add_custom_fromShop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_add"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etShopNameNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Shop Name"
+        android:layout_below="@+id/ll1"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/ic_shop"/>
+
+    <LinearLayout
+        android:id="@+id/llCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etShopNameNormal"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10">
+
+
+        <CheckBox
+            android:id="@+id/checkBoxShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="walk-in"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginTop="@dimen/dimen_5"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:orientation="vertical"
+    android:visibility="gone" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10">
+
+            <TextView
+                android:id="@+id/txt_PurchaseBillPrefix"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase Bill Prefix"/>
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tv_sales_prefix"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS" />
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:text="Enable Prefix"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="end"
+        android:layout_below="@+id/llCheckBox">
+
+
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="cancel"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="#ef5350"
+            android:layout_marginRight="30dp"
+            />
+
+        <Button
+            android:id="@+id/btOk"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="#66BB6A"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/dimen_20"/>
+
+    </LinearLayout>
+</RelativeLayout>

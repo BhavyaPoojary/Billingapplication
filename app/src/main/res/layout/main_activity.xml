@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <GridView
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/grid"
+        android:layout_above="@+id/txtAddContents">
+
+    </GridView>
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FE2E64"
+        android:gravity="right"
+        android:text="status"
+        android:textColor="@color/white"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add bill"
+        android:textSize="30dp"
+        android:textColor="#3E2723"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button2"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:background="@drawable/button_border"
+        />
+    <TextView
+        android:id="@+id/txtAddContents"
+        android:textColor="#3E2723"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/options_rel"
+        android:textSize="25dp"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:id="@+id/options_rel"
+        android:background="#424242"
+
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_above="@+id/button2">
+
+        <!--CCCCCCCCCCCCCCCCCCCCCCCCC-->
+        <HorizontalScrollView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rrTax"
+                    >
+
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:background="@drawable/ic_add"
+                   android:id="@+id/iv_tax"/>
+                    <TextView
+                        android:id="@+id/txtTax"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/iv_tax"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rrUnit"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_unit"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:src="@drawable/ic_kilograms"
+                        tools:ignore="VectorDrawableCompat"/>
+                    <TextView
+                        android:id="@+id/txtUnit"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/iv_unit"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/rrUnit"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/rrPackage"
+                    android:visibility="gone">
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_package"
+                        android:clickable="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/iv_package"
+                        tools:ignore="VectorDrawableCompat"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtPackage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/iv_package"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="0dp"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rrBrand"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/rrPackage"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone">
+                    <ImageView
+                        android:src="@drawable/ic_user_silhouette"
+                        android:clickable="true"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/iv_brand"
+                        tools:ignore="VectorDrawableCompat"/>
+                    <TextView
+                        android:id="@+id/txtBrand"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/iv_brand"
+                        android:text=""
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rrSupplier"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/rrPackage"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:src="@drawable/ic_user_silhouette"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/iv_supplier"
+                        tools:ignore="VectorDrawableCompat" />
+                    <TextView
+                        android:id="@+id/txtSupplier"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/iv_supplier"
+                        android:text=""
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rrCustomer"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/rrPackage"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:src="@drawable/ic_user_silhouette"
+                        tools:ignore="VectorDrawableCompat"
+                        android:clickable="true"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/iv_customer" />
+                    <TextView
+                        android:id="@+id/txtCustomer"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/iv_customer"
+                        android:text=""
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rrItem"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/rrPackage"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:src="@drawable/ic_add_to_shopping_cart"
+                        tools:ignore="VectorDrawableCompat"
+                        android:clickable="true"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/iv_item" />
+                    <TextView
+                        android:id="@+id/txtItem"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/iv_item"
+                        android:text=""
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rrPurchase"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:layout_alignTop="@+id/rrPackage"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:src="@drawable/ic_stock_white"
+                        tools:ignore="VectorDrawableCompat"
+                        android:clickable="true"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/iv_purchase" />
+                    <TextView
+                        android:id="@+id/txtPurchase"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/iv_purchase"
+                        android:text=""
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!--CCCCCCCCCCCCCCCCCCCCCCCCC-->
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+

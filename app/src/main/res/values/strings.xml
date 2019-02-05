@@ -1,0 +1,332 @@
+<resources>
+    <string name="app_name">AndroBiller</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+
+    <string name="ftp">ftp.itzit.in</string>
+
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="caps">QWERTYUIOPLKJHGFDSAZXCVBNM</string>
+    <string name="shopName">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890, ._</string>
+    <string name="brandName">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890</string>
+    <string name="name">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" "</string>
+    <string name="address">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890," ""'"._#/</string>
+
+
+    <string name="Settings">Settings</string>
+    <string name="SalesDate">Sales Date</string>
+    <string name="Customer">Customer</string>
+    <string name="Stock">Stock</string>
+    <string name="ChangePassword">Change Password</string>
+    <string name="ClearPurchase">Clear Purchase</string>
+    <string name="SearchBill">Search Bill</string>
+    <string name="SearchByUser">Search By User</string>
+    <string name="Sync">Sync</string>
+
+    <!--,,,,,,,,,,,,,,,,,,,,,,English Words....................-->
+
+    <string name="Daily"><font color='blue'>Daily</font></string>
+
+    <string name="daily_E">Daily</string>
+    <string name="daily_A">اليومي</string>
+
+    <string name="setting_E">Settings</string>
+    <string name="setting_A">الإعدادات</string>
+
+    <string name="Sales_Date_E">Sales Date</string>
+    <string name="Sales_Date_A">تاريخ المبيعات</string>
+
+    <string name="customer_E">Customer</string>
+    <string name="customer_A">زبون</string>
+
+    <string name="stock_E">Stock</string>
+    <string name="stock_A">مخزون</string>
+
+    <string name="change_psw_E">Change Password</string>
+    <string name="change_psw_A">غير كلمة السر</string>
+
+    <string name="clear_purchase_E">Clear Purchase</string>
+    <string name="clear_purchase_A">مسح الشراء</string>
+
+    <string name="search_bill_E">Search Bill</string>
+    <string name="search_bill_A">البحث بيل</string>
+
+    <string name="search_by_user_E">Search By User</string>
+    <string name="search_by_user_A">البحث عن طريق المستخدم</string>
+
+    <string name="sync_E">Sync</string>
+    <string name="sync_A">مزامنة</string>
+
+    <string name="wastage_E">Wastage Report</string>
+    <string name="wastage_A">تقرير الهدر</string>
+
+    <string name="sales_report_E">Sales Report</string>
+    <string name="sales_report_A">تقرير المبيعات</string>
+
+    <string name="purchase_report_E">Purchase Report</string>
+    <string name="purchase_report_A">تقرير الشراء</string>
+
+    <string name="sales_returns_E">Sales Returns</string>
+    <string name="sales_returns_A">عوائد المبيعات</string>
+
+    <string name="purchase_returns_E">Purchase Returns</string>
+    <string name="purchase_returns_A">شراء العودة</string>
+
+    <string name="unit_E">Unit</string>
+    <string name="unit_A">وحدة</string>
+
+    <string name="add_unit_E">Add Unit Name</string>
+    <string name="add_unit_A">أضف اسم الوحدة</string>
+
+    <string name="unit_name_E">Unit Name</string>
+    <string name="unit_name_A">إسم الوحدة</string>
+
+    <string name="cancel_E">Cancel</string>
+    <string name="cancel_A">إلغاء</string>
+
+    <string name="add_E">Add</string>
+    <string name="add_A">إضافة</string>
+
+    <string name="package_E">Package</string>
+    <string name="package_A">صفقة</string>
+
+    <string name="aad_package_name_E">Add Package Name</string>
+    <string name="aad_package_name_A">أضف اسم الحزمة</string>
+
+
+    <string name="package_name_E">Package Name</string>
+    <string name="package_name_A">اسم الحزمة</string>
+
+    <string name="quantity_E">Quantity</string>
+    <string name="quantity_A">كمية</string>
+
+    <string name="measure_unit_E">Measure Unit</string>
+    <string name="measure_unit_A">وحدة قياس</string>
+
+    <string name="brand_E">Brand</string>
+    <string name="brand_A">علامة تجارية</string>
+
+    <string name="brand_name_E">Brand Name</string>
+    <string name="brand_name_A">اسم العلامة التجارية</string>
+
+    <string name="next_E">Next</string>
+    <string name="next_A">التالى</string>
+
+    <string name="supplier_E">Supplier</string>
+    <string name="supplier_A">المورد</string>
+
+    <string name="select_supplier_E">Select Supplier</string>
+    <string name="select_supplier_A">اختر المورد</string>
+
+    <string name="vat_E">Vat</string>
+    <string name="vat_A">برميل</string>
+
+    <string name="old_balance_E">Old Balance</string>
+    <string name="old_balance_A">التوازن القديم</string>
+
+    <string name="supplier_address_E">Supplier Address</string>
+    <string name="supplier_address_A">عنوان المورد</string>
+
+    <string name="contact_E">Contact</string>
+    <string name="contact_A">اتصل</string>
+
+    <string name="remarks_E">Remarks</string>
+    <string name="remarks_A">ملاحظات</string>
+
+    <string name="item_E">Item</string>
+    <string name="item_A">بند</string>
+
+    <string name="add_item_E">Add Item</string>
+    <string name="add_item_A">اضافة عنصر</string>
+
+    <string name="item_name_E">Item Name</string>
+    <string name="item_name_A">اسم العنصر</string>
+
+    <string name="edit_E">Edit</string>
+    <string name="edit_A">تصحيح</string>
+
+    <string name="purchase_rate_E">Purchase Rate</string>
+    <string name="purchase_rate_A">سعر الشراء</string>
+
+    <string name="sales_rate_E">Sales Rate</string>
+    <string name="sales_rate_A">معدل المبيعات</string>
+
+    <string name="print_name_E">Print Name</string>
+    <string name="print_name_A">إطبع الإسم</string>
+
+    <string name="alternative_name_E">AlterNative Name</string>
+    <string name="alternative_name_A">الاسم الأصلي</string>
+
+    <string name="purchase_E">Purchase</string>
+    <string name="purchase_A">شراء</string>
+
+    <string name="bill_no_E">Bill No</string>
+    <string name="bill_no_A">مشروع قانون لا</string>
+
+    <string name="bill_date_E">Bill Date</string>
+    <string name="bill_date_A">تاريخ الفاتورة</string>
+
+    <string name="package_qty_E">Package Qty</string>
+    <string name="package_qty_A">حزمة الكمية</string>
+
+    <string name="buying_price_E">buying Price</string>
+    <string name="buying_price_A">سعر الشراء</string>
+
+    <string name="tax_E">Tax %</string>
+    <string name="tax_A">الضريبة ٪</string>
+
+    <string name="selling_price_E">selling price</string>
+    <string name="selling_price_A">سعر البيع</string>
+
+    <string name="id_E">Id</string>
+    <string name="id_A">هوية شخصية</string>
+
+    <string name="rate_E">Rate</string>
+    <string name="rate_A">معدل</string>
+
+    <string name="qty_E">Qty</string>
+    <string name="qty_A">الكمية</string>
+
+    <string name="total_E">Total</string>
+    <string name="total_A">مجموع</string>
+
+    <string name="finish_E">Finish</string>
+    <string name="finish_A">إنهاء</string>
+
+    <string name="updating_purchase_data_E">Updating Purchase Data</string>
+    <string name="updating_purchase_data_A">تحديث بيانات الشراء</string>
+
+    <string name="delete_E">Delete</string>
+    <string name="delete_A">حذف</string>
+
+    <string name="bill_No_E">Bill No</string>
+    <string name="bill_No_A">مشروع قانون لا</string>
+
+    <string name="add_bill_E">Add Bill</string>
+    <string name="add_bill_A">إضافة فاتورة</string>
+
+    <string name="select_shop_name_E">Select Shop Name</string>
+    <string name="select_shop_name_A">حدد اسم المتجر</string>
+
+    <string name="shop_name_E">Shop Name</string>
+    <string name="shop_name_A">اسم المحل</string>
+
+    <string name="stock_qty_E">Stock Qty</string>
+    <string name="stock_qty_A">الكمية</string>
+
+    <string name="to_E">To</string>
+    <string name="to_A">إلى</string>
+
+    <string name="grand_total_E">Grand Total</string>
+    <string name="grand_total_A">المجموع الكلي</string>
+
+    <string name="date_E">Date</string>
+    <string name="date_A">تاريخ</string>
+
+    <string name="discount_E">Discount</string>
+    <string name="discount_A">خصم</string>
+
+    <string name="print_E">Print</string>
+    <string name="print_A">طباعة</string>
+
+    <string name="add_discount_E">Add Discount</string>
+    <string name="add_discount_A">إضافة الخصم</string>
+
+    <string name="amount_E">Amount</string>
+    <string name="amount_A">كمية</string>
+
+    <string name="discount_in_E">Discount in %</string>
+    <string name="discount_in_A">الخصم في٪</string>
+
+    <string name="discount_in_amount_E">Discount in Amount</string>
+    <string name="discount_in_amount_A">الخصم في المبلغ</string>
+
+    <string name="payment_mode_E">Payment Mode</string>
+    <string name="payment_mode_A">طريقة الدفع</string>
+
+    <string name="full_pay_E">Full Payment</string>
+    <string name="full_pay_A">دفع كامل</string>
+
+    <string name="partial_payment_E">Partial Payment</string>
+    <string name="partial_payment_A">دفع جزء من المال</string>
+
+
+    <string name="paid_amount_E">Paid Amount</string>
+    <string name="paid_amount_A">المبلغ المدفوع</string>
+
+    <string name="balance_amount_E">Balance Amount</string>
+    <string name="balance_amount_A">مقدار وسطي</string>
+
+
+</resources>

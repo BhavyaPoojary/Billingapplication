@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dimen_10">
+
+    <TextView
+        android:id="@+id/txtPaymentMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Payment Mode"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rbPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtPaymentMode"
+        android:layout_alignParentLeft="true">
+
+        <RadioButton
+            android:id="@+id/rb_Full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Full Payment"
+            android:textColor="#000"
+            android:textSize="20dp"
+            tools:ignore="RtlCompat,UnknownId" />
+
+        <RadioButton
+            android:id="@+id/rb_Partial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partial Payment"
+            android:textColor="#000"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp"
+        android:padding="5dp"
+        android:text="Total Amount :"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/txt_TotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_Total"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/txt_Total"
+        android:padding="5dp"
+        android:text="3444444"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/txt_Total" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtInputPaidAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_Total"
+        android:layout_alignParentLeft="true">
+
+        <EditText
+            android:id="@+id/etPaid_Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Paid Amount"
+            android:inputType="number"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/txt_Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtInputPaidAmount"
+        android:text="Balance Amount:"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtBalance_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txt_Balance"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBalance_Amount"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="cancel"
+            android:textColor="@color/white"
+            android:background="#ef5350"
+            android:layout_marginRight="@dimen/dimen_10"/>
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="ok"
+            android:textColor="@color/white"
+            android:background="#ef5350"
+            android:layout_marginRight="@dimen/dimen_10"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

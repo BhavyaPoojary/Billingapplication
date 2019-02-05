@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_margin="@dimen/dimen_10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_margin="@dimen/dimen_10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Soled Quantity"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+        <TextView
+            android:id="@+id/tvSoledQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_margin="@dimen/dimen_10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Item Quantity"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+        <TextView
+            android:id="@+id/tvItemQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_20"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_margin="@dimen/dimen_10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Rate"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_20"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_margin="@dimen/dimen_10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+        <EditText
+            android:id="@+id/etQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_20"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_margin="@dimen/dimen_10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_20"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dimen_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_margin="@dimen/dimen_10"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_horizontal|center_vertical">
+        <Button
+            android:id="@+id/btReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/white"
+            android:padding="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/white"
+            android:padding="@dimen/dimen_10"
+           android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

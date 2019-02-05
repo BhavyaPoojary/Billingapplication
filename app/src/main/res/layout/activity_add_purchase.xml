@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    tools:context="billing.amits.androbiller.add_purchase">
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/options">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <AutoCompleteTextView
+                android:singleLine="true"
+                android:completionThreshold="1"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:id="@+id/item_name"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:clickable="true"
+            android:id="@+id/add_item"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_plus_black"/>
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+               <!-- <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+                    <AutoCompleteTextView
+                        android:singleLine="true"
+                        android:completionThreshold="1"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/brand_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" brand"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:clickable="true"
+                    android:id="@+id/add_brand"
+                    android:layout_gravity="center"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_plus_black"/>
+
+
+-->
+                <TextView
+                    android:id="@+id/txtBrandName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dimen_20"
+                    android:layout_margin="@dimen/dimen_5"
+                    />
+
+                <Spinner
+                    android:id="@+id/spBrandName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_spinner_background">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtUnitName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="5dp"/>
+                <TextView
+                    android:id="@+id/tvUnitName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtPackageName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="5dp"/>
+                <TextView
+                    android:id="@+id/tvPackageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtPackageQty"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="5dp"/>
+                <TextView
+                    android:id="@+id/tvPackageQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:id="@+id/b_price"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tax"
+                    android:enabled="false"
+                    android:text="5"
+                    android:hint="Tax %"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtTax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:id="@+id/s_price"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <EditText
+                android:inputType="number"
+                android:id="@+id/qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:clickable="true"
+            android:layout_marginRight="5dp"
+            android:id="@+id/subs_qty"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_minus_black_round"/>
+        <Button
+            android:clickable="true"
+            android:id="@+id/add_qty"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_plus_black"/>
+    </LinearLayout>
+        </LinearLayout>
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/colorAccent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/header"
+                        android:animateLayoutChanges="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+                        <TextView
+                            android:id="@+id/item_id"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+                            android:textSize="23dp"
+                            android:text="" />
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/txtItemName"
+                            android:textSize="23dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="" />
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:textSize="23dp"
+                            android:id="@+id/txt_item_rate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="" />
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"/>
+                        <TextView
+                            android:textSize="23dp"
+                            android:id="@+id/txt_item_qty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="" />
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"/>
+                        <TextView
+                            android:textSize="23dp"
+                            android:textDirection="anyRtl"
+                            android:id="@+id/txt_total"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="" />
+
+                        <!-- ... repeat with all Text .. -->  <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"/>
+                        <TextView
+                            android:textDirection="anyRtl"
+                            android:id="@+id/totq"
+                            android:layout_width="0dp"
+                            android:textSize="23dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="TOTQ"
+                            android:visibility="gone"/>
+
+
+                    </LinearLayout>
+                    <ListView
+                        android:layout_below="@+id/header"
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        ></ListView>
+                    <RelativeLayout
+                        android:id="@+id/footer"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="#b4ddef"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/vat_text"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@+id/vat_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00"
+                            android:id="@+id/vat_amount"/>
+
+                        <TextView
+                            android:layout_toLeftOf="@+id/total_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/total_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/options">
+
+        <Button
+            android:textColor="#000"
+            android:id="@+id/cancel"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:text="" />
+
+        <Button
+            android:textColor="#000"
+            android:id="@+id/finish"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+
+        <Button
+            android:textColor="#000"
+            android:id="@+id/submit"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

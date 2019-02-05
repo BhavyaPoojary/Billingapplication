@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:padding="@dimen/dimen_5"
+        >
+
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="left"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="3dp" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="3dp" />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PhNo"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="3dp" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="3dp" />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adress"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+    <!--    <Space
+            android:layout_width="5dp"
+            android:layout_height="3dp" />
+        <TextView
+            android:id="@+id/remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"
+            android:gravity="end"/>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

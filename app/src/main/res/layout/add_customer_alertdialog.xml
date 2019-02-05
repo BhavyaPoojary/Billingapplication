@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <AutoCompleteTextView
+        android:inputType="textCapSentences"
+        android:completionThreshold="1"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/ic_shopping_cart"
+        android:hint=""
+        android:maxLength="20"
+        android:id="@+id/shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="@string/shopName"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/first"
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:inputType="textCapSentences"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/ic_user"
+        android:hint=""
+        android:maxLength="15"
+        android:layout_below="@+id/shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_name"
+        android:visibility="gone"
+        android:digits="@string/name"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/third"
+        android:layout_below="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+    <EditText
+        android:inputType="number"
+        android:layout_below="@+id/owner_name"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vat_no"
+        android:maxLength="20"
+        android:hint=""/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/fourth"
+        android:layout_below="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:maxLength="16"
+        android:layout_below="@+id/vat_no"
+        android:drawableLeft="@drawable/ic_phone_call"
+        android:hint=""
+        android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/fourth"
+        android:id="@+id/fifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/opBalance"
+            android:hint=""
+            android:drawableLeft="@drawable/ic_book"
+            android:inputType="number"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/fifth"
+        android:id="@+id/six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:hint=""
+            android:drawableLeft="@drawable/ic_book"
+            android:inputType="textCapSentences|textMultiLine"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/six"
+        android:id="@+id/seven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/address"
+            android:hint=""
+            android:drawableLeft="@drawable/ic_remark"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="end">
+
+
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="#ef5350"
+            android:layout_marginRight="30dp"
+            />
+
+        <Button
+            android:id="@+id/btOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="#66BB6A"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/dimen_20"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profit">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:id="@+id/card">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10"
+           >
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sales"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp_20"
+                android:textAlignment="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/black"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"/>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Payment"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbFull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"/>
+                <RadioButton
+                    android:id="@+id/rbPartial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"/>
+
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/card"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:padding="@dimen/dimen_5"
+                android:background="#b4ddef"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/tv_BillDate"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    android:id="@+id/tv_SBillNo"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Bill No"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="3dp" />
+                <TextView
+                    android:id="@+id/tv_SCName"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    android:id="@+id/tv_STotal"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+
+
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_below="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                >
+
+            </ListView>
+
+
+              <RelativeLayout
+                  android:paddingRight="5dp"
+                  android:paddingLeft="5dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:background="#b4ddef"
+                  android:layout_marginBottom="@dimen/dimen_5">
+                  <TextView
+                      android:id="@+id/totalAmount"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Total Sales : " />
+                  <TextView
+                      android:textStyle="bold"
+                      android:layout_toRightOf="@+id/totalAmount"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="00"
+                      android:id="@+id/tv_totalA"/>
+
+                  <TextView
+                      android:id="@+id/txtBalance"
+                      android:layout_toLeftOf="@+id/balance_amount"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Balance: "/>
+                  <TextView
+                      android:textStyle="bold"
+                      android:id="@+id/balance_amount"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"/>
+
+                  <TextView
+                      android:id="@+id/txtPaidA"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentStart="true"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginStart="117dp"
+                      android:text="Paid Amount :"
+                      android:layout_alignParentLeft="true"
+                      android:layout_marginLeft="117dp" />
+
+                  <TextView
+                      android:id="@+id/txtPaidAmount"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_toRightOf="@+id/txtPaidA"
+                      android:text="00"/>
+
+
+              </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

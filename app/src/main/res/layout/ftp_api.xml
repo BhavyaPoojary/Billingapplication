@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <CheckBox
+        android:id="@+id/rbFTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"/>
+
+    <CheckBox
+        android:id="@+id/rbAPI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"/>
+
+   <!-- <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10">
+
+
+        <RadioButton
+            android:id="@+id/rbFTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FTP Enable"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:id="@+id/rbAPI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="API Sync Enable"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </RadioGroup>-->
+
+    <LinearLayout
+        android:id="@+id/llFtpApi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/etFtpAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FTP Address"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/etFtpUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="User Name"/>
+
+            <EditText
+                android:id="@+id/etFtpPss"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Password"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/etPath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Path"/>
+            <EditText
+                android:id="@+id/etRoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Root"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10">
+
+        <EditText
+            android:id="@+id/etTimeInterval"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Time Interval"
+            android:inputType="number"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btOkServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="OK"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#fff"/>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    >
+
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAllCaps="true"
+        android:text="id" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textAllCaps="true"
+        android:text="goodgoodaa" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentTop="true"
+            android:textAlignment="textEnd"
+            android:id="@+id/p_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="goodaaa"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="end" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:id="@+id/s_rate"
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:text="goodaaaa"
+            android:layout_below="@+id/p_rate"
+
+
+            />
+
+    </RelativeLayout>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"/>
+    <TextView
+        android:textAlignment="textEnd"
+        android:id="@+id/item_qty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="good" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"/>
+    <TextView
+        android:textAlignment="textEnd"
+        android:textDirection="anyRtl"
+        android:id="@+id/total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="good" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <TextView
+        android:textAlignment="textEnd"
+        android:textDirection="anyRtl"
+        android:id="@+id/totq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="good"
+        android:visibility="gone"/>
+
+    <!-- ... repeat with all Text .. -->
+
+</LinearLayout>

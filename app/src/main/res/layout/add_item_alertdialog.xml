@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <AutoCompleteTextView
+        android:inputType="textCapCharacters"
+        android:capitalize="characters"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:completionThreshold="1"
+        android:drawableLeft="@drawable/ic_items"
+        android:hint=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name" />
+    <LinearLayout
+        android:layout_below="@+id/name"
+        android:id="@+id/tax_box"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:visibility="gone">
+        <EditText
+            android:text="5"
+            android:maxLength="2"
+            android:enabled="false"
+            android:id="@+id/tax"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+        </EditText>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            android:text="%"/>
+        <CheckBox
+            android:text=""
+            android:visibility="visible"
+            android:id="@+id/tax_change"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tax_box"
+        android:id="@+id/ll_brand">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtInBrandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint=""
+            android:visibility="gone">
+            <AutoCompleteTextView
+                android:singleLine="true"
+                android:completionThreshold="1"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/brand_name"
+                android:drawableLeft="@drawable/ic_listandroid"
+                android:inputType="textCapCharacters"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:clickable="true"
+            android:id="@+id/bt_add_item"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_plus_black"/>
+
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:capitalize="characters"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:completionThreshold="1"
+        android:drawableLeft="@drawable/ic_listandroid"
+        android:hint=" Brand Code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/brand_code"
+        android:visibility="gone"
+        android:inputType="textCapCharacters"
+        android:layout_below="@+id/ll_brand"
+        android:digits="@string/brandName"/>
+
+    <EditText
+        android:id="@+id/openStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/brand_code"
+        android:digits="1234567890."
+        android:drawableLeft="@drawable/ic_rupee_indian"
+        android:hint=" Open Stock"
+        android:maxLength="10"
+        android:inputType="number"
+        android:singleLine="true"
+        android:visibility="gone"/>
+
+
+    <EditText
+        android:id="@+id/purchase_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/openStock"
+        android:digits="1234567890."
+        android:drawableLeft="@drawable/ic_rupee_indian"
+        android:hint=""
+        android:maxLength="10"
+        android:inputType="number"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/rate"
+        android:digits="1234567890."
+        android:inputType="number"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/ic_rupee_indian"
+        android:hint=""
+        android:layout_width="match_parent"
+        android:maxLength="10"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/purchase_rate"
+        android:layout_alignParentLeft="true" />
+
+
+    <EditText
+        android:singleLine="true"
+        android:drawableLeft="@drawable/ic_listandroid"
+        android:inputType="number"
+        android:hint=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qty"
+        android:maxLength="4"
+        android:layout_below="@+id/rate"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:id="@+id/llIsPackage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qty"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Is Package"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">`
+
+            <Spinner
+                android:id="@+id/spUnit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/custom_spinner_background"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <Spinner
+                android:id="@+id/spPackage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_spinner_background"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spTax"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_spinner_background"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="visible">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:singleLine="true"
+        android:drawableLeft="@drawable/ic_listandroid"
+        android:inputType="textCapCharacters"
+        android:hint=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/print_name"
+        android:maxLength="10"
+
+        android:layout_below="@+id/llIsPackage"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:singleLine="true"
+        android:drawableLeft="@drawable/ic_listandroid"
+        android:inputType="textCapCharacters"
+        android:hint=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alternativeName"
+        android:maxLength="10"
+        android:layout_below="@+id/print_name"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:layout_below="@+id/alternativeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="end">
+
+
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="#ef5350"
+            android:layout_marginRight="30dp"
+            />
+
+        <Button
+            android:id="@+id/btOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="#66BB6A"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/dimen_20"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

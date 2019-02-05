@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadToServer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:padding="@dimen/dimen_10"
+        android:background="#b4ddef">
+
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:layout_weight=".5"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="left"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="3dp" />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="@dimen/sp_20"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="3dp" />
+        <TextView
+            android:id="@+id/tvPhNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PhNo"
+            android:textSize="@dimen/sp_20"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="3dp" />
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:textSize="@dimen/sp_20"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="3dp" />
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="@dimen/sp_20"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+       <!-- <Space
+            android:layout_width="5dp"
+            android:layout_height="3dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"
+            android:gravity="end"/>-->
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lView">
+
+    </ListView>
+
+
+</LinearLayout>

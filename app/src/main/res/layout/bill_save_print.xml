@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do You Want to Print Bill?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_20"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="@dimen/dimen_20"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:padding="@dimen/dimen_5">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="Net Amount:"
+             android:textSize="@dimen/sp_20"
+             android:textColor="@color/colorPrimary"/>
+
+         <TextView
+             android:id="@+id/txt_Net_Amount"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="122222222"
+             android:textSize="@dimen/sp_20"
+             android:textColor="@color/colorPrimary"/>
+
+     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Paid Amount:"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txt_paid_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="100000"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Balance Amount:"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txt_balance_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="222222"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10">
+
+        <Button
+            android:id="@+id/btSaveAndPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5"
+            android:text="Save and Print"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+           android:layout_marginRight="@dimen/dimen_10"
+            android:textColor="@color/white"
+            android:background="@color/green"/>
+
+        <Button
+            android:id="@+id/bt_Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="@dimen/sp_20"
+            android:padding="@dimen/dimen_5"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@color/green"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

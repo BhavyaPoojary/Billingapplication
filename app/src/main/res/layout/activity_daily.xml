@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtItemIfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item Information"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select Date :"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/ivDate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_weekly_calendar"/>
+
+
+
+        </LinearLayout>
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:animateLayoutChanges="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:text="BillNo"
+                android:id="@+id/tvBillNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/tvShopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tvBillNo"
+                android:text="ShopName"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tvBillNo" />
+
+            <TextView
+                android:id="@+id/grandTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="112dp"
+                android:gravity="left"
+                android:text="GrandTotal"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:gravity="left"
+                android:textAlignment="textEnd"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PaidAmount"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/paidAmount"
+                tools:ignore="RtlCompat" />
+
+
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:id="@+id/lvList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
